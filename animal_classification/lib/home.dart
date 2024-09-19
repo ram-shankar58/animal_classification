@@ -49,7 +49,7 @@ class _HomeState extends State<Home> {
   loadModel() async {
     //this function loads our model
     await Tflite.loadModel(
-      model: 'assets/model_unquant.tflite',
+      model: 'assets/model_unquant.tflite', //CHANGE THE TFLITE MODEL HERE LATER
       labels: 'assets/labels.txt',
     );
   }
