@@ -16,11 +16,11 @@ dependencies:
 
   # Main packages for our app
   tflite: ^1.1.2
-  image_picker: ^0.8.3+2
+  image_picker: ^1.1.2
 
   # For app logo and Splash Screen
-  flutter_launcher_icons: ^0.9.1
-  flutter_native_splash: ^1.2.1
+  flutter_launcher_icons: ^0.14.1
+  flutter_native_splash: ^2.4.1
 
 flutter_native_splash:
   color: "#E0F3FD"
@@ -43,4 +43,5 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/
+    - assets/model_unquant.tflite
+    - assets/labels.txt

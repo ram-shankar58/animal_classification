@@ -39,6 +39,7 @@ class _HomeState extends State<Home> {
       threshold: 0.5,
       imageMean: 127.5,
       imageStd: 127.5,
+      asynch: true,
     );
     setState(() {
       _output = output!;
@@ -49,8 +50,8 @@ class _HomeState extends State<Home> {
   loadModel() async {
     //this function loads our model
     await Tflite.loadModel(
-      model: 'assets/model_unquant.tflite', //CHANGE THE TFLITE MODEL HERE LATER
-      labels: 'assets/labels.txt',
+      model: '/assets/model_unquant.tflite', //CHANGE THE TFLITE MODEL HERE LATER
+      labels: '/assets/labels.txt',
     );
   }
 
